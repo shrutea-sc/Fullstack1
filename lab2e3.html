@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+let text = "";
+
+for (let i = 0; i <= 10; i++) {
+if(i % 2 == 0) {
+  text += "<br>The even number is " + i;
+   } else {
+  text += "<br>The odd number is " + i;
+   }
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

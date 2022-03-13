@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>LAB 2 EX1</h2>
+
+<p></p>
+
+<p id="demo"></p>
+
+<script>
+var arr = buildArray(25); 
+var str = findFacts({
+  name: "Toronto",
+  population: "6,197,000",
+  continent: "North America" 
+});
+
+console.log(str)
+document.getElementById("demo").innerHTML = arr;
+function buildArray(num) {
+    let myArray=[];
+    for(i=0;i<=num;i++){
+      myArray.push(i);
+    }
+     
+    console.log(myArray)
+    return myArray;
+  } 
+
+function findFacts(obj){
+  let str=""
+  Object.keys(obj).map(o1=>{
+    str+=o1+": "+obj[o1]+ ", "
+  })
+  return str.substr(0,str.length - 2)
+}
+</script>
+
+</body>
+</html>
+
+
